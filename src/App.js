@@ -40,16 +40,16 @@ function App() {
 
   return (
     <div className="App flex justify-center  bg-blue-400 p-5 m-2">
-      <div className="quote-box">
+      <div id="quote-box">
         <div className="words p-5">
-          <h3 className="text p-4">{words}</h3>
-          <p className="author text-left p-4">{author}</p>
+          <h3 className="p-4" id='text'>{words}</h3>
+          <p className="text-left p-4" id="author">{author}</p>
         </div>
         
 
         <div className=''>
-          <button className="new-quote bg-blue-200 m-5 p-2" onClick={handleClick}>New Quote</button>
-          <a className="tweet-quote bg-blue-200 m-5 p-2" href={`https://twitter.com/intent/tweet?text=${words}%20%20--${author} &hashtags=quotes`} target="_blank" rel='noreferrer'> tweet it </a>
+          <button id="new-quote" className="bg-blue-200 m-5 p-2" onClick={handleClick}>New Quote</button>
+          <a id="tweet-quote" className="bg-blue-200 m-5 p-2" href={`https://twitter.com/intent/tweet?text=${words}%20%20--${author} &hashtags=quotes`} target="_blank" rel='noreferrer'> tweet it </a>
         </div>
         
       </div>
