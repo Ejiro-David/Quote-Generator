@@ -28,9 +28,6 @@ function App() {
 
       })
 
-
-
-
     return ( 
       setWords()
     );
@@ -39,17 +36,17 @@ function App() {
 
 
   return (
-    <div className="App flex justify-center  bg-blue-400 p-5 m-2">
+    <div className="App rounded-xl flex justify-center h-5/6 bg-blue-400 p-5 m-2">
       <div id="quote-box">
         <div className="words p-5">
-          <h3 className="p-4" id='text'>{words}</h3>
-          <p className="text-left p-4" id="author">{author}</p>
+          <h3 className="p-4 font-semibold  font-serif text-2xl" id='text'>{words}</h3>
+          <p className="text-right italic text-xl p-4" id="author">--{author}</p>
         </div>
         
 
-        <div className=''>
-          <button id="new-quote" className="bg-blue-200 m-5 p-2" onClick={handleClick}>New Quote</button>
-          <a id="tweet-quote" className="bg-blue-200 m-5 p-2" href={`https://twitter.com/intent/tweet?text=${words}%20%20--${author} &hashtags=quotes`} target="_blank" rel='noreferrer'> tweet it </a>
+        <div className='flex space-between space-x-64'>
+          <button id="new-quote" className=" hover:drop-shadow-lg rounded-md bg-blue-200 m-5 p-2" onClick={handleClick}>new quote</button>
+          <a id="tweet-quote" className="hover:drop-shadow-lg rounded-md items-end bg-blue-200 m-5 p-2" href={`https://twitter.com/intent/tweet?text=${words}%20%20--${author} &hashtags=quotes`} target="_blank" rel='noreferrer'> tweet it </a>
         </div>
         
       </div>
