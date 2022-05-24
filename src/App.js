@@ -44,9 +44,9 @@ function App() {
         </div>
         
 
-        <div className='flex space-between space-x-64'>
-          <button id="new-quote" className=" hover:drop-shadow-lg rounded-md bg-blue-200 m-5 p-2" onClick={handleClick}>new quote</button>
-          <a id="tweet-quote" className="hover:drop-shadow-lg rounded-md items-end bg-blue-200 m-5 p-2" href={`https://twitter.com/intent/tweet?text=${words}%20%20--${author} &hashtags=quotes`} target="_blank" rel='noreferrer'> tweet it </a>
+        <div className='flex space-between h-24 space-x-64'>
+          <button id="new-quote" className=" hover:drop-shadow-lg hover:bg-blue-50 text-base rounded-md text-center bg-blue-200 w-40 m-5 p-2" onClick={handleClick}>new quote</button>
+          <button className="hover:drop-shadow-lg hover:bg-blue-50  text-base rounded-md items-end w-40 text-center bg-blue-200 m-5 p-2"><a id="tweet-quote"  href={`https://twitter.com/intent/tweet?text=${words}%20%20--${author} &hashtags=quotes`} target="_blank" rel='noreferrer'> tweet it </a></button>
         </div>
         
       </div>
